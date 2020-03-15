@@ -1,0 +1,833 @@
+1.
+A
+B B
+C C C
+D D D D
+E E E E E
+F F F F F F
+G G G G G G G
+
+
+public class Main
+{
+	public static void main(String[] args) {
+        char a='A';
+        for(int i=1;i<=7;i++){
+            for(int j=1;j<=i;j++){
+                System.out.print(a+" ");     
+            }
+                       System.out.println();
+    a++;
+        }
+	}
+}
+
+
+2.
+A
+A B
+A B C
+A B C D
+A B C D E
+A B C D E F
+A B C D E F G
+
+
+public class Main
+{
+	public static void main(String[] args) {
+        
+        for(int i=1;i<=7;i++){
+            char a='A';
+            for(int j=1;j<=i;j++){
+                
+                System.out.print(a+" ");
+                a++;
+            }
+            
+            System.out.println();
+
+        }
+	}
+}
+
+
+3.
+G
+G F
+G F E
+G F E D
+G F E D C
+G F E D C B
+G F E D C B A
+
+
+public class Main
+{
+	public static void main(String[] args) {
+        
+        for(int i=7;i>=1;i--){
+            char a='G';
+            for(int j=7;j>=i;j--){
+                
+                System.out.print(a+" ");
+                a--;
+            }
+            
+            System.out.println();
+
+        }
+	}
+}
+
+4.
+G F E D C B A
+G F E D C B
+G F E D C
+G F E D
+G F E
+G F
+G
+
+
+public class Main
+{
+	public static void main(String[] args) {
+        
+        for(int i=1;i<=7;i++){
+            char a='G';
+            for(int j=7;j>=i;j--){
+                
+                System.out.print(a+" ");
+                a--;
+            }
+            System.out.println();
+
+        }
+	}
+}
+
+
+5.
+A B C D E F G
+A B C D E F
+A B C D E
+A B C D
+A B C
+A B
+A
+
+//solution 1.
+public class Main
+{
+	public static void main(String[] args) {
+        
+        for(int i=1;i<=7;i++){
+            char a='A';
+            for(int j=i;j<=7;j++){
+                
+                System.out.print(a+" ");
+                a++;
+            }
+            System.out.println();
+
+        }
+	}
+}
+
+//solution 2.
+public class Main
+{
+	public static void main(String[] args) {
+                for(int i=1;i<=7;i++){
+                    char ch='A';
+                    for(int j=1;j<=8-i;j++){
+                        System.out.print(ch+" ");
+                        ch++;
+                    }
+                    System.out.println();
+                }
+                
+	}
+}
+
+6.
+A
+B C
+D E F
+G H I J
+K L M N O
+P Q R S T U
+V W X Y Z [ \
+
+public class Main
+{
+	public static void main(String[] args) {
+         char a='A';
+        for(int i=1;i<=7;i++){
+           
+            for(int j=1;j<=i;j++){
+                
+                System.out.print(a+" ");
+                a++;
+            }
+            System.out.println();
+
+        }
+	}
+}
+
+
+7.
+      A
+     A B
+    A B C
+   A B C D
+  A B C D E
+ A B C D E F
+A B C D E F G
+
+
+public class Main
+{
+	public static void main(String[] args) {
+         
+        for(int i=1;i<=7;i++){
+           
+           for(int k=7;k>=i;k--){
+               System.out.print(" ");
+           }
+           char a='A';
+            for(int j=1;j<=i;j++){
+                
+                System.out.print(a+" ");
+                a++;
+            }
+            System.out.println();
+
+        }
+	}
+}
+
+
+8.
+A
+B A
+C B A
+D C B A
+E D C B A
+F E D C B A
+G F E D C B A
+
+
+public class Main
+{
+	public static void main(String[] args) {
+            char a='A';    
+            
+        for(int i=1;i<=7;i++){
+            char ch=a;
+            for(int k=1;k<=i;k++){
+                System.out.print(ch+" ");
+                ch--;
+            }
+            a++;
+        System.out.println();
+        }
+        
+    }
+}
+
+9.
+       A
+      ABA
+     ABCBA
+    ABCDCBA
+   ABCDEDCBA
+  ABCDEFEDCBA
+ ABCDEFGFEDCBA
+
+public class Main
+{
+	public static void main(String[] args) {
+                
+                char a=' ';
+                char a1=' ';
+                for(int i=1;i<=7;i++){
+                char ch='A';
+                    a=ch;
+                    for(int j=1;j<=7-i+1;j++){
+                        System.out.print(" ");
+                    }
+                    for(int k=1;k<=i;k++){
+                        System.out.print(a);
+                        a++;
+                    }
+                    ch++;
+                
+                    a1='A';
+                    for(int j=1;j<i;j++){
+                        System.out.print(a1);
+                        a1++;
+                    } 
+                
+                    System.out.println();   
+            
+            }
+    }
+}
+
+
+10.
+      G
+     F G
+    E F G
+   D E F G
+  C D E F G
+ B C D E F G
+A B C D E F G
+
+public class Main
+{
+	public static void main(String[] args) {
+                char ch='G';
+                char a=' ';
+            for(int i=1;i<=7;i++){
+               a=ch;
+                 for(int j=1;j<=7-i;j++){
+                    System.out.print(" ");
+                }
+                for(int k=1;k<=i;k++){
+                    System.out.print(a+" ");
+                    a++;
+                }
+                ch--;
+                 System.out.println();   
+            }
+    }
+}
+
+
+11.
+A B C D E F G
+  A B C D E F
+   A B C D E
+    A B C D
+     A B C
+      A B
+       A
+
+
+public class Main
+{
+	public static void main(String[] args) {
+        for(int i=7;i>=1;i--){
+            
+            char a='A';
+            for(int k=7;k>=i;k--){
+                System.out.print(" ");
+            }
+            for(int j=1;j<=i;j++){
+                System.out.print(a+" ");
+                a++;
+            }
+            System.out.println();
+        }
+	}
+}
+
+
+12.
+      A
+     B B
+    C C C
+   D D D D
+  E E E E E
+ F F F F F F
+G G G G G G G
+
+
+
+public class Main
+{
+	public static void main(String[] args) {
+        char a='A';
+        for(int i=1;i<=7;i++){
+            for(int k=7;k>=i;k--){
+                System.out.print(" ");
+            }
+            for(int j=1;j<=i;j++){
+                System.out.print(a+" ");
+               
+            }
+             a++;
+            System.out.println();
+        }
+	}
+}
+
+13.
+A A A A A A A
+A A A A A B B
+A A A A C C C
+A A A D D D D
+A A E E E E E
+A F F F F F F
+G G G G G G G
+
+
+public class Main
+{
+	public static void main(String[] args) {
+          
+     char a='A';         
+        for(int i=1;i<=7;i++){
+          
+            for(int k=i;k<7;k++){
+                System.out.print("A ");
+            }
+    
+            for(int j=1;j<=i;j++){
+                System.out.print(a+" ");
+            }
+            a++;  
+
+        System.out.println();
+        }
+        
+    }
+}
+
+14.
+A B C D E F G F E D C B A
+B C D E F G F E D C B
+C D E F G F E D C
+D E F G F E D
+E F G F E
+F G F
+G
+
+public class Main
+{
+	public static void main(String[] args) {
+                 char ch='A';
+                 char a=' ';
+            for(int i=1;i<=7;i++){
+                a=ch;
+                for(int j=7;j>=i+1;j--){
+                    System.out.print(a);
+                    a++;
+                }
+                for(int j=7;j>=i;j--){
+                    System.out.print(a);
+                    a--;
+                }
+                ch++;
+                System.out.println();
+        }
+                
+	}
+}
+ 
+15.
+       A
+      A B
+     A B C
+    A B C D
+   A B C D E
+  A B C D E F
+ A B C D E F G
+  A B C D E F
+   A B C D E
+    A B C D
+     A B C
+      A B
+       A
+
+public class Main
+{
+	public static void main(String[] args) {
+                
+            for(int i=1;i<=7;i++){
+                 char ch='A';
+                for(int j=1;j<=7-i;j++){
+                    System.out.print(" ");
+                }
+                for(int k=1;k<=i;k++){
+                    System.out.print(ch+" ");
+                    ch++;
+                }
+                 System.out.println();   
+            }
+            
+            for(int i=1;i<=7;i++){
+                char ch='A';
+                for(int j=1;j<=i;j++){
+                    System.out.print(" ");
+                }
+                for(int k=6;k>=i;k--){
+                    System.out.print(ch+" ");
+                    ch++;
+                }
+                System.out.println();
+            }        
+	}
+}
+  
+
+
+  
+16.
+A B C D E F G
+ B C D E F G
+  C D E F G
+   D E F G
+    E F G
+     F G
+      G
+      G
+     F G
+    E F G
+   D E F G
+  C D E F G
+ B C D E F G
+A B C D E F G
+
+public class Main
+{
+	public static void main(String[] args) {
+                char ch='A';
+                char a=' ';
+                char a1=' ';
+            for(int i=1;i<=7;i++){
+               a=ch;
+                 for(int j=1;j<=i;j++){
+                    System.out.print(" ");
+                }
+                for(int k=7;k>=i;k--){
+                    System.out.print(a+" ");
+                    a++;
+                }
+                ch++;
+                 System.out.println();   
+            }
+                char g='G';
+            for(int i=1;i<=7;i++){
+               a1=g;
+                 for(int j=1;j<=7-i+1;j++){
+                    System.out.print(" ");
+                }
+                for(int k=1;k<=i;k++){
+                    System.out.print(a1+" ");
+                    a1++;
+                }
+                g--;
+                 System.out.println();   
+            }
+    }
+}
+
+
+
+17.
+ABCDEFG
+   BCDEFG
+      CDEFG
+         DEFG
+            EFG
+               FG
+                 G
+                 G
+               FG
+            EFG
+         DEFG
+      CDEFG
+   BCDEFG
+ABCDEFG
+
+public class Main
+{
+	public static void main(String[] args) {
+                char ch='A';
+                char a=' ';
+                char a1=' ';
+            for(int i=1;i<=7;i++){
+               a=ch;
+                 for(int j=7;j>=7-i+2;j--){
+                    System.out.print("   ");
+                }
+                for(int k=7;k>=i;k--){
+                    System.out.print(a);
+                    a++;
+                }
+                ch++;
+                 System.out.println();   
+            }
+                char g='G';
+            for(int i=1;i<=7;i++){
+               a1=g;
+             
+                for(int j=1;j<=7-i;j++){
+                    System.out.print("   ");
+                }
+                for(int k=7;k>=7-i+1;k--){
+                    System.out.print(a1);
+                    a1++;
+                }
+                g--;
+                 System.out.println();   
+            }
+        
+    }
+}
+
+
+
+
+18.
+A
+A B A
+A B C B A
+A B C D C B A
+A B C D E D C B A
+A B C D E F E D C B A
+A B C D E F G F E D C B A
+
+public class Main
+{
+	public static void main(String[] args) {
+    
+        char ch=' ';
+        for(int i=1;i<=7;i++){
+        char  a='A';
+            for(int k=1;k<i;k++){
+                System.out.print(a+" ");
+                a++;
+            }
+            for(int k=1;k<=i;k++){
+                System.out.print(a+" ");
+                a--;
+            }
+            System.out.println();
+           }
+           
+	}
+}
+
+19.
+A
+A B
+A B C
+A B C D
+A B C D E
+A B C D E F
+A B C D E F G
+A B C D E F
+A B C D E
+A B C D
+A B C
+A B
+A
+
+public class Main
+{
+	public static void main(String[] args) {
+    
+        char ch=' ';
+        for(int i=1;i<=7;i++){
+        char  a='A';
+            for(int k=1;k<=i;k++){
+                System.out.print(a+" ");
+                a++;
+            }
+            System.out.println();
+           }
+        for(int i=7;i>=1;i--){
+          char  a1='A';
+            for(int k=i-1;k>=1;k--){
+                System.out.print(a1+" ");
+                a1++;
+            }
+            System.out.println();
+           }
+           
+	}
+}
+
+20.
+G F E D C B A
+F E D C B A
+E D C B A
+D C B A
+C B A
+B A
+A
+A
+B A
+C B A
+D C B A
+E D C B A
+F E D C B A
+G F E D C B A
+
+public class Main
+{
+	public static void main(String[] args) {
+        char  a='G';
+        char ch=' ';
+        for(int i=7;i>=1;i--){
+            ch=a;
+            for(int k=i;k>=1;k--){
+                System.out.print(ch);
+                ch--;
+            }
+            a--;
+            System.out.println();
+           }
+           
+        char  a1='A';
+        char ch1=' ';
+        for(int i=1;i<=7;i++){
+            ch1=a1;
+            for(int k=1;k<=i;k++){
+                System.out.print(ch1);
+                ch1--;
+            }
+            a1++;
+            System.out.println();
+           }
+	}
+}
+
+
+21.
+A B C D E F G
+A B C D E F
+A B C D E
+A B C D
+A B C
+A B
+A
+A
+A B
+A B C
+A B C D
+A B C D E
+A B C D E F
+A B C D E F G
+
+public class Main
+{
+	public static void main(String[] args) {
+        for(int i=7;i>=1;i--){
+            char a='A';
+            for(int j=1;j<=i;j++){
+                System.out.print(a+" ");
+                a++;
+            }
+            System.out.println();
+        }
+        
+        for(int i=1;i<=7;i++){
+            char a='A';
+            for(int j=1;j<=i;j++){
+                System.out.print(a+" ");
+                a++;
+            }
+            System.out.println();
+        }
+	}
+}
+
+
+
+22.
+       A
+     B A B
+    C B A B C
+   D C B A B C D
+  E D C B A B C D E
+ F E D C B A B C D E F
+G F E D C B A B C D E F G
+
+public class Main
+{
+	public static void main(String[] args) {
+                char ch='A';
+                char a=' ';
+                char a1=' ';
+                for(int i=1;i<=7;i++){
+                    a=ch;
+                    for(int j=1;j<=7-i+1;j++){
+                        System.out.print(" ");
+                    }
+                    for(int k=1;k<=i;k++){
+                        System.out.print(a+" ");
+                        a--;
+                    }
+                    ch++;
+                
+                    a1='B';
+                    for(int j=1;j<i;j++){
+                        System.out.print(a1+" ");
+                        a1++;
+                    } 
+                
+                    System.out.println();   
+            
+            }
+    }
+}
+
+
+23.
+A
+A B C
+A B C D E
+A B C D E F G
+A B C D E F G H I
+A B C D E F G H I J K
+A B C D E F G H I J K L M
+
+public class Main
+{
+	public static void main(String[] args) {
+        for(int i=1;i<=7;i++){
+            char a='A';
+            for(int j=1;j<=i*2-1;j++){
+                System.out.print(a+" ");
+                a++;
+            }
+            System.out.println();
+        }
+	}
+}
+
+
+24.
+                 A
+                BB
+               CCC
+              DDDD
+             EEEEE
+            FFFFFF
+           GGGGGGG
+        public class Main
+{
+	public static void main(String[] args) {
+        char a='A';
+        for(int i=1;i<=7;i++){
+            for(int j=1;j<=7-i;j++){
+                System.out.print(" ");
+            }
+            for(int k=i;k>=1;k--){
+                System.out.print(a);
+                
+            }
+            System.out.println();
+            a++;
+        }
+	}
+}
+
+          
